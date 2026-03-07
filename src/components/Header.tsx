@@ -157,9 +157,9 @@ export default function Header() {
                 <LogIn className="w-4 h-4" />
                 Employee Portal Login
               </a>
-              {/* <Button className="w-full bg-accent hover:bg-teal-dark text-white mt-4 ">
+              <Button className="w-full bg-accent hover:bg-teal-dark text-white mt-4 ">
                 Get Started
-              </Button> */}
+              </Button>
             </div>
           </div>
         </div>
