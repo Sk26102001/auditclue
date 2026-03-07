@@ -109,7 +109,7 @@ export default function Contact() {
 
             {/* WhatsApp Button */}
             <motion.a
-              href="https://wa.me/971000000000"
+              href="https://wa.me/6207945708"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}

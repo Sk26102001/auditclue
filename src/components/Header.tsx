@@ -38,14 +38,14 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white/60 backdrop-blur-lg shadow-soft py-3"
-          : "bg-white backdrop-blur-lg shadow-soft py-5"
+          ? "bg-white/60 backdrop-blur-lg shadow-soft py-2"
+          : "bg-white backdrop-blur-lg shadow-soft py-3"
       }`}
     >
       <nav className="section-container flex items-center justify-between">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <img src={logo} alt="Auditclue" className="h-16 w-auto"/>
+          <img src={logo} alt="Auditclue" className="h-20 w-auto"/>
         </Link>
 
         {/* Desktop Navigation */}
@@ -54,7 +54,7 @@ export default function Header() {
             <Link
               key={item.name}
               to={item.href}
-              className={`text-sm font-medium transition-colors link-underline ${
+              className={`text-md font-medium transition-colors link-underline ${
                 isActive(item.href)
                   ? "text-accent"
                   : isScrolled
@@ -106,9 +106,9 @@ export default function Header() {
             </DropdownMenuContent>
           </DropdownMenu>
 
-          <Button className="bg-accent hover:bg-teal-dark text-white btn-premium">
+          <Link to="/register" className="bg-accent hover:bg-teal-dark text-white btn-premium py-2 px-2 border rounded-md border-transparent">
             Get Started
-          </Button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -157,9 +157,9 @@ export default function Header() {
                 <LogIn className="w-4 h-4" />
                 Employee Portal Login
               </a>
-              <Button className="w-full bg-accent hover:bg-teal-dark text-white mt-4">
+              {/* <Button className="w-full bg-accent hover:bg-teal-dark text-white mt-4 ">
                 Get Started
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
